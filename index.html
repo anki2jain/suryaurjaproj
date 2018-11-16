@@ -20,6 +20,32 @@
         i{
             color:yellowgreen;
         }
+        #footer{
+            background: yellowgreen;
+            color: white;
+            height:300px;
+            width:100%;
+        }
+
+        .products{
+            height:200px;
+            width:300px;
+            padding-left:30px;
+
+        }
+      
+        @media only screen and (min-device-width: 200px){
+            #picture{
+                width:100%;
+            }
+        }
+        
+        @media only screen and (min-device-width: 500px){
+            #picture{
+                width:350px;
+            }
+        }
+     
     </style>
 </head>
 
@@ -31,7 +57,7 @@
         <a class="navbar-brand ml-5" id="ankit" style="font-family: 'Lobster Two', cursive;
             font-size: 40px; color:yellowgreen; background: white;
             "
-            href="#">Surya Urja</a>
+            href="#"><img style="height:100px; width:100x" src="logo.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -101,11 +127,11 @@
                 <br><br><br>
                 <div class="row">
 
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-2 col-sm-12 col-xs-12">
                         <div class="row">
 
-                            <div class="col-lg-12 col-sm-4"><i class="fas fa-check"></i></div>
-                            <div class="col-lg-12 col-sm-4 ">
+                            <div class="col-lg-12 col-sm-4 col-xs-4"><i class="fas fa-check"></i></div>
+                            <div class="col-lg-12 col-sm-4 col-xs-4">
 
                                 <h6>1. SIMPLE AND EASY </h6>
                                 <h6>We're with you dfghjkl</h6>
@@ -117,11 +143,11 @@
                     </div>
                     <br><br>
                     <hr>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-2 col-sm-12 ">
                         <div class="row">
 
-                            <div class="col-lg-12 col-sm-4"><i class="fas fa-rupee-sign"></i></div>
-                            <div class="col-lg-12 col-sm-4 ">
+                            <div class="col-lg-12 col-sm-4 col-xs-2"><i class="fas fa-rupee-sign"></i></div>
+                            <div class="col-lg-12 col-sm-4 col-xs-2">
 
                                 <h6>2. Save Money </h6>
                                 <h6 class="float-right">Solar often costs less than energyfrom your average utilities,
@@ -136,13 +162,31 @@
 
                     <br><br>
                     <hr>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-2 col-sm-12 col-xs-6">
                         <div class="row">
 
-                            <div class="col-lg-12 col-sm-4 col-xs-6"><i class="fas fa-shield-alt"></i></div>
+                            <div class="col-lg-12 col-sm-4 col-xs-4"><i class="fas fa-shield-alt"></i></div>
+                            <div class="col-lg-12 col-sm-4 col-xs-4">
+
+                                <h6>3. After Sales Services* </h6>
+                                <h6>We offer you protection on your solar panels so you can benefit from peace of mind
+                                    .</h6>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <hr>
+                    <div class="col-md-2 col-sm-12 col-xs-6">
+                        <div class="row">
+
+                            <div class="col-lg-12 col-sm-4 col-xs-6"><i class="fas fa-business-time"></i></div>
                             <div class="col-lg-12 col-sm-4 ">
 
-                                <h6>3. 25- Years of Warranty* </h6>
+                                <h6>4. Tailor Made Solar System </h6>
                                 <h6>We offer you protection on your solar panels so you can benefit from peace of mind
                                     .</h6>
 
@@ -155,7 +199,7 @@
 
                     <br><br>
                     <hr>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-2 col-sm-12 col-xs-6">
                         <div class="row">
 
                             <div class="col-lg-12 col-sm-4"><i class="fas fa-screwdriver"></i></div>
@@ -179,14 +223,28 @@
 
     <br><br>
     <section style="background: #C0C0C0 ">
-        <div class=" pl-5 pt-4 pb-4 ">
-            <img src="people.png">
-            <h4>Pick up a plan</h4>
+
+        <div class="row">
+            <div class="col-md-4 pl-5 pt-4 pb-4">
+                <img id="picture" src="people.jpg">
+            </div>
+            <div class="col-md-6 pl-5 pt-4 pb-4">
+
+                <h4>Pick up a plan that's right for you</h4>
+                <br>
+                <h6>Our efficeincy is best</h6>
+                <br>
+                <a href="#" class="btn " style="background: yellowgreen; color:white">Go somewhere</a>
+            </div>
+        </div>
+        <!-- <div class=" pl-5 pt-4 pb-4 ">
+            <img id="picture" src="people.jpg">
+            <h4>Pick up a plan that's right for you</h4>
             <br>
             <h6>Our efficeincy is best</h6>
             <br>
             <a href="#" class="btn " style="background: yellowgreen; color:white">Go somewhere</a>
-        </div>
+        </div> -->
 
     </section>
 
@@ -196,113 +254,137 @@
 
     <section id="why">
 
-        <div class="text-center">
+        <div class="container">
             <br>
-            <h2 style="color:black;">
-                Learn about ideas
-                <br><br><br>
-                <div class="row">
+            <h2 style="color:black;" class="text-center">
+                Learn about ideas</h2>
+            <br><br><br>
+            <div class="row">
 
-                    <div class="col-md-6 col-sm-12">
-                        <div class="row">
+                <div class="col-md-4 col-sm-12 pl-5 pb-4 ">
+                    <div class="row">
 
-                            <div class="text-center col-lg-12 col-sm-4"><img src="data:image/jpeg;base64,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"></div>
-                            <div class="col-lg-12 col-sm-4 ">
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="grid.jpg"></div>
+                        <div class="col-lg-12 col-sm-4 ">
 
-                                <!-- <h6>1. SIMPLE AND EASY </h6>
-                                    <h6>We're with you dfghjkl</h6>
-     -->
-                            </div>
-
+                            <h5 style="text-align:center;">Grid </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
 
                         </div>
+
+
                     </div>
-                    <br><br>
-                    <hr>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="row">
-
-                            <div class="col-lg-12 col-sm-4"><img src="https://images-na.ssl-images-amazon.com/images/I/61vCDTS%2Bo0L._SY355_.jpg"></div>
-                            <div class="col-lg-12 col-sm-4 ">
-
-                                <!-- <h6>2. Save Money </h6>
-                                    <h6 class="float-right">Solar often costs less than energyfrom your average utilities,
-                                        so you can save money</h6>
-     -->
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <br><br>
-                    <hr>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="row">
-
-                            <div class="col-lg-12 col-sm-4"><img src="https://cdn3.volusion.com/shnft.ndlpf/v/vspfiles/photos/EL-50650-GNT-2T.jpg?1378816600"></div>
-                            <div class="col-lg-12 col-sm-4 ">
-
-                                <!-- <h6>2. Save Money </h6>
-                                        <h6 class="float-right">Solar often costs less than energyfrom your average utilities,
-                                            so you can save money</h6>
-         -->
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <br><br>
-                    <hr>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="row">
-
-                            <div class="col-lg-12 col-sm-4"><img src="data:image/png;base64,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"></div>
-                            <div class="col-lg-12 col-sm-4 ">
-                                <!--     
-                                    <h6>4. Installation included </h6>
-                                    <h6>Our crew has the experience and expertise to make sure your system is installed
-                                        right</h6>
-     -->
-                            </div>
-
-
-                        </div>
-                    </div>
-
                 </div>
-            </h2>
+
+
+                <br><br>
+                <hr>
+                <div class="col-md-4 col-sm-12 pl-5 pb-4 ">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="nogrid.jpg"></div>
+                        <div class="col-lg-12 col-sm-4 ">
+
+                            <h5 style="text-align:center;">No Grid </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+                <div class="col-md-4 col-sm-12 pl-5 pb-4 ">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="hybrid.png"></div>
+                        <div class="col-lg-12 col-sm-4 ">
+
+                            <h5 style="text-align:center;">Hybrid  </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+                <div class="col-md-4 col-sm-12 pl-5 pb-4 ">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="light.jpg"></div>
+                        <div class="col-lg-12 col-sm-4 ">
+
+                            <h5 style="text-align:center;">Lightning Sol </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+                <div class="col-md-4 col-sm-12 pl-5 pb-4">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="battery.jpg"></div>
+                        <div class="col-lg-12 col-sm-4 ">
+
+                            <h5 style="text-align:center;">Battery </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+                <div class="col-md-4 col-sm-12 pl-5 pb-4">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-sm-4"><img class="products" src="watersol.jpg"></div>
+                        <div class="col-lg-12 col-sm-4 ">
+
+                            <h5 style="text-align:center;">Water Solutions </h5>
+                            <h6 class="pl-4">Solar often costs less than energyfrom your average utilities,
+                                so you can save money</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br><br>
+                <hr>
+
+              
+            </div>
+
         </div>
 
     </section>
     <br><br>
-    <section style="background: #C0C0C0 ">
-        <div class=" pl-5 pt-4 pb-4 ">
-            <img src="people.png">
-            <h4>Pick up a plan</h4>
-            <br>
-            <h6>Our efficeincy is best</h6>
-            <br>
-            <a href="#" class="btn " style="background: yellowgreen; color:white">Go somewhere</a>
-        </div>
 
-    </section>
-    <br><br>
-    <section style="background: #C0C0C0 ">
-        <div class=" pl-5 pt-4 pb-4 ">
-            <img src="people.png">
-            <h4>Pick up a plan</h4>
-            <br>
-            <h6>Our efficeincy is best</h6>
-            <br>
-            <a href="#" class="btn " style="background: yellowgreen; color:white">Go somewhere</a>
-        </div>
-
-    </section><br><br><br>
-    <section style="background: ">
+    <section style="background:white ">
         <h3 class="text-center">Let's see if going Solar Is Right for you </h3>
 
         <h6 class="text-center">Call 8650605941 now to get info or fill out the form below </h6>
@@ -329,17 +411,22 @@
                         <input type="text" class="form-control">
                     </div>
                     <div class="col-lg-6 col-md-6 col-xs-6 form-group">
-                            <label for="name">Roof Area</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-xs-6 form-group">
-                            <label for="name">Monthly Electricity Bill</label>
-                            <input type="text" class="form-control">
-                        </div>
+                        <label for="name">Roof Area</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 form-group">
+                        <label for="name">Monthly Electricity Bill</label>
+                        <input type="text" class="form-control">
+                    </div>
                     <div class="col-lg-12 col-md-12 col-xs-12 form-group">
                         <label for="name">Query</label>
-                        <textarea name="query" id="" class="form-control"cols="200" rows="8" style="max-width: 100%;">Type here........</textarea>
+                        <textarea name="query" id="" class="form-control" cols="200" rows="8" style="max-width: 100%;">Type here........</textarea>
 
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <button class="btn " style="background:yellowgreen; color:white;">
+                            Get Result!
+                        </button>
                     </div>
 
                 </div>
@@ -351,7 +438,12 @@
     <br><br>
 
     <section style="background: #C0C0C0">
-    <div></div>
+        <div></div>
+    </section>
+
+
+    <section id="footer">
+
     </section>
     <!-- style="height:400px; width:700px;" -->
     <!-- Optional JavaScript -->
